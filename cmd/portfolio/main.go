@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/Quorum-Code/portfolio-site-go/internal/webserver"
+	"github.com/lpernett/godotenv"
+)
 
 func main() {
-	fmt.Println("hello world!")
+	godotenv.Load(".env")
+	webserver.StartWebServer()
 }
