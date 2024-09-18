@@ -1,1 +1,10 @@
-<p>The home page!</p>
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+{{template "head" .}}
+    <body>
+        {{template "header" .}}
+        <p>The home page!</p>
+    </body>
+</html>
+{{end}}
